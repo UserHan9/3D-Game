@@ -9,7 +9,7 @@ public class RayCastShoot : MonoBehaviour
     public Camera fpscam;
     public float FireRate = 10f;
     public float NextFireRate = 0f;
-    public GameObject bulletEffect;
+
     public GameObject hitEffect;
 
     // Start is called before the first frame update
@@ -43,11 +43,6 @@ public class RayCastShoot : MonoBehaviour
                 Destroy(hitGO, 0.5f); // Hancurkan efek hit setelah 0.5 detik
             }
         }
-        else
-        {
-            // Jika tidak ada tabrakan, kita buat efek peluru yang terbang
-            GameObject bulletGO = Instantiate(bulletEffect, fpscam.transform.position, fpscam.transform.rotation);
-            Destroy(bulletGO, 2f); // Hancurkan efek peluru setelah 2 detik
-        }
+       
     }
 }
