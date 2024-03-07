@@ -9,13 +9,14 @@ public class RayCastShoot : MonoBehaviour
     public Camera fpscam;
     public float FireRate = 10f;
     public float NextFireRate = 0f;
+    private Animator anim;
 
     public GameObject hitEffect;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class RayCastShoot : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1") && Time.time >= NextFireRate)
         {
+            anim.SetTrigger("nembak"); // Mengatur trigger untuk memulai animasi tembakan
             NextFireRate = Time.time + 1f / FireRate;
             Shoot();
         }
@@ -43,6 +45,6 @@ public class RayCastShoot : MonoBehaviour
                 Destroy(hitGO, 0.5f); // Hancurkan efek hit setelah 0.5 detik
             }
         }
-       
     }
 }
+
