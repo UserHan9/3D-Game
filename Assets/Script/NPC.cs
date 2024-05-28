@@ -4,19 +4,11 @@ using System.Collections;
 
 public class NPC : MonoBehaviour
 {
-    // Referensi ke canvas dialogue
+    
     public GameObject dialogueCanvas;
-
-    // Referensi ke TextMeshProUGUI di dalam canvas dialogue
     public TextMeshProUGUI dialogueText;
-
-    // Array untuk menyimpan berbagai dialog
     public string[] dialogues;
-
-    // Kecepatan penulisan teks
     public float textSpeed = 0.05f;
-
-    // Coroutine untuk menampilkan teks satu per satu
     private Coroutine typingCoroutine;
 
     private int currentDialogueIndex = 0; // Indeks dialog saat ini
@@ -39,7 +31,7 @@ public class NPC : MonoBehaviour
     private void Update()
     {
         // Memeriksa jika teks telah selesai ditampilkan dan tombol kanan mouse ditekan
-        if (isDialogActive && Input.GetMouseButtonDown(1) && !IsTyping())
+        if (isDialogActive && Input.GetMouseButtonDown(0) && !IsTyping())
         {
             ShowNextDialogue();
         }
@@ -76,7 +68,6 @@ public class NPC : MonoBehaviour
         typingCoroutine = null;
     }
 
-    // Method untuk menyembunyikan canvas dialogue
     public void HideDialogueCanvas()
     {
         if (dialogueCanvas != null)
