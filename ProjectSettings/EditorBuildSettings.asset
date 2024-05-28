@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Forest.unity
     guid: 6f5f91363545f4947a6af65e01dc9113
+<<<<<<< HEAD
   - enabled: 0
     path: Assets/Scenes/Menang.unity
     guid: 1f9ebf1b4e9a1f6438cf5022fd91d1c8
+=======
+>>>>>>> parent of d19011b (test)
   m_configObjects: {}
