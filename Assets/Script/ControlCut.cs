@@ -8,6 +8,6 @@ public class ControlCut : MonoBehaviour
     
     public void Start()
     {
-        SceneManager.LoadScene("Forest");
+        SceneManager.LoadScene("Tutorial");
     }
 }

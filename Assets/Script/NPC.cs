@@ -25,7 +25,7 @@ public class NPC : MonoBehaviour
 
     private void Start()
     {
-        // Menyembunyikan canvas dan TextMesh Pro saat mulai
+      
         if (dialogueCanvas != null)
         {
             dialogueCanvas.SetActive(false);

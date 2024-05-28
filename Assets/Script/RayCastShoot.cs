@@ -12,6 +12,7 @@ public class RayCastShoot : MonoBehaviour
     private Animator anim;
 
     public GameObject hitEffect;
+    public GameObject muzzleFlash;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,9 @@ public class RayCastShoot : MonoBehaviour
                 Destroy(hitGO, 0.5f); // Hancurkan efek hit setelah 0.5 detik
             }
         }
+
+        // Memunculkan efek muzzle flash pada posisi muzzle
+        GameObject muzzleFlashEffect = Instantiate(muzzleFlash, muzzleFlash.transform.position, muzzleFlash.transform.rotation);
+        Destroy(muzzleFlashEffect, 0.1f); // Hancurkan efek muzzle flash setelah 0.1 detik
     }
 }
-
