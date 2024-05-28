@@ -348,7 +348,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MOMENT DIMANA ALIEN TURUN KE BUMI
+  m_Text: Meski penduduk lokal memperingatkan bahaya, ia tetap keras kepala mendirikan
+    tenda.
 --- !u!222 &599527940
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -449,8 +450,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PERTEMPURAN ANTARA UMAT MANUSIAN DAN ALIEN TELAH DIMULAI, DAN NASIB TERGANTUNG
-    PADAMU
+  m_Text: "Petualangan yang dimulai dengan berani, kini berubah menjadi kisah penuh
+    teror.\r"
 --- !u!222 &689887225
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -619,7 +620,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PADA JAM 7 MALAM ,TAHUN 3024
+  m_Text: Di lereng Gunung Salak yang misterius, seorang pendaki berkulit hitam bertekad
+    menguji nyali.
 --- !u!222 &1170138680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -720,7 +722,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'APAKAH KITA SEBAGAI UMAT MANUSIA BISA MEMUSNAHKAN SELURUH ALIEN? '
+  m_Text: Saat malam menjelang, suara-suara aneh mulai terdengar dari kegelapan.
 --- !u!222 &1194980323
 CanvasRenderer:
   m_ObjectHideFlags: 0
